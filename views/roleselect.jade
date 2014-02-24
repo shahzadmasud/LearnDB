@@ -1,0 +1,15 @@
+//
+   Created by shahan.shahid on 2/24/14.
+
+extends layout
+block content
+
+
+    h1  Select Role
+    form(action='/roleselect', method='post')
+        input(type='submit', class='btn btn-primary', value='Passenger')
+        input(type='hidden', name='source', value='passenger')
+
+    form(action='/roleselect', method='post')
+        input(type='submit', class='btn btn-primary', value='Driver')
+        input(type='hidden', name='source', value='driver')
